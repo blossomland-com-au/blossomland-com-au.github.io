@@ -62,11 +62,18 @@ h1, h2, h3, h4, h5, h6,
     gap: 20px;
 }
 
+.nav-outer {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .nav-cta-group {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-left: 18px;
+    white-space: nowrap;
 }
 
 .lang-switch {
@@ -102,8 +109,9 @@ h1, h2, h3, h4, h5, h6,
     background:
         radial-gradient(circle at top right, rgba(201, 140, 143, 0.18), transparent 34%),
         linear-gradient(135deg, rgba(255, 250, 246, 0.96), rgba(240, 224, 214, 0.92)),
-        url("../images/hero/hero.png") no-repeat right 12% bottom / 42%;
-    min-height: 760px;
+        url("../images/blossomland/portrait-2.jpg") no-repeat right 8% bottom 18% / 33%,
+        url("../images/blossomland/treatment-4.jpg") no-repeat right -2% bottom / 36%;
+    min-height: 700px;
     padding-top: 220px;
 }
 
@@ -123,13 +131,14 @@ h1, h2, h3, h4, h5, h6,
     font-size: 18px;
     line-height: 1.8;
     max-width: 600px;
+    margin-bottom: 0;
 }
 
 .hero-actions {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
-    margin: 34px 0 28px;
+    margin: 28px 0 26px;
 }
 
 .theme-btn,
@@ -301,10 +310,15 @@ h1, h2, h3, h4, h5, h6,
 }
 
 @media only screen and (max-width: 991px) {
+    .nav-outer {
+        display: block;
+    }
+
     .bloosomland-hero {
         background:
             radial-gradient(circle at top right, rgba(201, 140, 143, 0.18), transparent 34%),
-            linear-gradient(135deg, rgba(255, 250, 246, 0.96), rgba(240, 224, 214, 0.92));
+            linear-gradient(135deg, rgba(255, 250, 246, 0.96), rgba(240, 224, 214, 0.92)),
+            url("../images/blossomland/portrait-2.jpg") no-repeat center bottom / 58%;
         min-height: auto;
         padding-top: 170px;
         padding-bottom: 110px;
