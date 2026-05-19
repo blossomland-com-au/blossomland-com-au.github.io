@@ -58,6 +58,36 @@ h1, h2, h3, h4, h5, h6,
     text-transform: uppercase;
 }
 
+.header-inner {
+    gap: 20px;
+}
+
+.nav-cta-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 18px;
+}
+
+.lang-switch {
+    background: rgba(255, 255, 255, 0.86);
+    border: 1px solid rgba(159, 100, 104, 0.22);
+    border-radius: 999px;
+    color: var(--blossom-ink);
+    display: inline-flex;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    padding: 11px 18px;
+    text-transform: uppercase;
+}
+
+.lang-switch:hover,
+.lang-switch.is-active {
+    background: var(--blossom-rose);
+    color: var(--blossom-white);
+}
+
 .eyebrow {
     color: var(--blossom-rose-dark);
     display: inline-block;
@@ -152,6 +182,44 @@ h1, h2, h3, h4, h5, h6,
     padding: 12px 18px;
 }
 
+.location-section {
+    margin-bottom: 120px;
+}
+
+.location-card,
+.map-card {
+    background: rgba(255, 255, 255, 0.82);
+    border: 1px solid rgba(159, 100, 104, 0.12);
+    border-radius: 28px;
+    box-shadow: 0 24px 44px rgba(62, 39, 40, 0.06);
+    height: 100%;
+    padding: 40px;
+}
+
+.location-card p,
+.location-card a {
+    color: #53625c;
+}
+
+.location-card strong {
+    color: var(--blossom-ink);
+}
+
+.location-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 28px;
+}
+
+.map-card iframe {
+    border: 0;
+    border-radius: 22px;
+    height: 100%;
+    min-height: 320px;
+    width: 100%;
+}
+
 .section-title h2,
 .page-title,
 .beauty-content h3,
@@ -223,6 +291,15 @@ h1, h2, h3, h4, h5, h6,
     color: var(--blossom-white);
 }
 
+.main-footer .contact-pill {
+    background: var(--blossom-cream);
+    color: var(--blossom-ink);
+}
+
+.main-footer .contact-pill:hover {
+    color: var(--blossom-ink);
+}
+
 @media only screen and (max-width: 991px) {
     .bloosomland-hero {
         background:
@@ -235,6 +312,11 @@ h1, h2, h3, h4, h5, h6,
 
     .hero-content h1 {
         font-size: 58px;
+    }
+
+    .nav-cta-group {
+        margin-left: 0;
+        margin-top: 18px;
     }
 }
 
@@ -253,5 +335,10 @@ h1, h2, h3, h4, h5, h6,
 
     .bloosomland-contact-panel {
         padding: 40px 24px;
+    }
+
+    .location-card,
+    .map-card {
+        padding: 28px 22px;
     }
 }
