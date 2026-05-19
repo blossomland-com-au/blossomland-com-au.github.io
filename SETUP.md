@@ -2,16 +2,16 @@
 
 ## Domain
 
-- Domain: `bloosomland.com.au`
+- Domain: `blossomland.com.au`
 - Registrar: GoDaddy
 - DNS and email host: Bluehost
-- Preferred canonical domain: `https://bloosomland.com.au`
+- Preferred canonical domain: `https://blossomland.com.au`
 
 ## Requested mailboxes
 
-- `hello@bloosomland.com.au`
-- `sisly@bloosomland.com.au`
-- `jenks@bloosomland.com.au`
+- `hello@blossomland.com.au`
+- `sisly@blossomland.com.au`
+- `jenks@blossomland.com.au`
 
 ## GitHub Pages DNS records
 
@@ -30,7 +30,7 @@ Preserve Bluehost-provided MX, SPF, and DKIM records for the domain after the na
 
 ## Verification checklist
 
-- GitHub Pages custom domain set to `bloosomland.com.au`
+- GitHub Pages custom domain set to `blossomland.com.au`
 - DNS resolves to GitHub Pages IPs
 - `www` redirects or aliases to the apex domain
 - Email accounts exist and can log in

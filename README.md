@@ -1,12 +1,12 @@
-# Bloosom Land Beauty Studio
+# Blossom Land Beauty Studio
 
-Static landing site for `bloosomland.com.au`, built from the provided HTML5 template and prepared for GitHub Pages deployment.
+Static landing site for `blossomland.com.au`, built from the provided HTML5 template and prepared for GitHub Pages deployment.
 
 ## Mailboxes
 
-- `hello@bloosomland.com.au`
-- `sisly@bloosomland.com.au`
-- `jenks@bloosomland.com.au`
+- `hello@blossomland.com.au`
+- `sisly@blossomland.com.au`
+- `jenks@blossomland.com.au`
 
 ## Deployment
 
