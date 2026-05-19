@@ -195,6 +195,150 @@ h1, h2, h3, h4, h5, h6,
     margin-bottom: 120px;
 }
 
+.booking-section {
+    margin-bottom: 120px;
+}
+
+.technician-panel,
+.booking-widget {
+    background: rgba(255, 255, 255, 0.82);
+    border: 1px solid rgba(159, 100, 104, 0.12);
+    border-radius: 28px;
+    box-shadow: 0 24px 44px rgba(62, 39, 40, 0.06);
+    padding: 34px;
+}
+
+.technician-panel {
+    display: grid;
+    gap: 18px;
+}
+
+.technician-card {
+    align-items: center;
+    background: rgba(255, 250, 246, 0.92);
+    border: 1px solid rgba(159, 100, 104, 0.12);
+    border-radius: 24px;
+    display: grid;
+    gap: 18px;
+    grid-template-columns: 130px 1fr;
+    overflow: hidden;
+    padding: 14px;
+}
+
+.technician-card img {
+    border-radius: 18px;
+    height: 150px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.technician-role,
+.booking-label {
+    color: var(--blossom-rose-dark);
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.technician-card-content h4 {
+    margin: 8px 0 10px;
+}
+
+.technician-card-content p,
+.booking-widget-footer p {
+    color: #53625c;
+    margin-bottom: 0;
+}
+
+.booking-widget {
+    display: grid;
+    gap: 24px;
+}
+
+.booking-field-group {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.booking-field,
+.calendar-widget,
+.time-slot-panel {
+    background: rgba(255, 250, 246, 0.92);
+    border: 1px solid rgba(159, 100, 104, 0.12);
+    border-radius: 24px;
+    padding: 20px;
+}
+
+.booking-select {
+    color: var(--blossom-ink);
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.calendar-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.calendar-weekdays,
+.calendar-grid,
+.time-slot-grid {
+    display: grid;
+    gap: 10px;
+}
+
+.calendar-weekdays,
+.calendar-grid {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.calendar-weekdays span {
+    color: #7a8782;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.calendar-day,
+.time-slot {
+    background: var(--blossom-white);
+    border: 1px solid rgba(159, 100, 104, 0.14);
+    border-radius: 16px;
+    color: var(--blossom-ink);
+    font-weight: 700;
+    min-height: 50px;
+}
+
+.calendar-day.is-selected,
+.time-slot.is-selected {
+    background: var(--blossom-rose);
+    border-color: var(--blossom-rose);
+    color: var(--blossom-white);
+}
+
+.calendar-day.is-muted {
+    color: #c6b8af;
+}
+
+.time-slot-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 14px;
+}
+
+.booking-widget-footer {
+    align-items: center;
+    display: flex;
+    gap: 18px;
+    justify-content: space-between;
+}
+
 .location-card,
 .map-card {
     background: rgba(255, 255, 255, 0.82);
@@ -351,8 +495,21 @@ h1, h2, h3, h4, h5, h6,
         padding: 40px 24px;
     }
 
+    .technician-panel,
+    .booking-widget,
     .location-card,
     .map-card {
         padding: 28px 22px;
+    }
+
+    .technician-card,
+    .booking-field-group,
+    .booking-widget-footer,
+    .time-slot-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-widget-footer {
+        display: grid;
     }
 }
