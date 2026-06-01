@@ -153,6 +153,8 @@ h1, h2, h3, h4, h5, h6,
     font-family: "Manrope", sans-serif;
     font-weight: 700;
     letter-spacing: 0.05em;
+    min-width: auto;
+    overflow: hidden;
     text-transform: uppercase;
 }
 
@@ -165,8 +167,30 @@ h1, h2, h3, h4, h5, h6,
     box-shadow: none;
 }
 
-.theme-btn:hover {
+.theme-btn:before,
+.theme-btn:after {
+    content: none;
+    display: none;
+}
+
+.theme-btn:hover,
+.theme-btn:focus,
+.theme-btn:active {
     background: var(--blossom-rose-dark);
+    color: var(--blossom-white);
+}
+
+.theme-btn.style-two:hover,
+.theme-btn.style-two:focus,
+.theme-btn.style-two:active,
+.theme-btn.style-three:hover,
+.theme-btn.style-three:focus,
+.theme-btn.style-three:active,
+.theme-btn.style-four:hover,
+.theme-btn.style-four:focus,
+.theme-btn.style-four:active {
+    background: var(--blossom-rose);
+    border-color: var(--blossom-rose);
     color: var(--blossom-white);
 }
 
