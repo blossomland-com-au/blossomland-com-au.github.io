@@ -191,6 +191,33 @@ h1, h2, h3, h4, h5, h6,
     padding: 12px 18px;
 }
 
+.about-images-duo {
+    align-items: end;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: minmax(0, 0.82fr) minmax(0, 1fr);
+    max-width: 640px;
+    padding: 0;
+}
+
+.about-images-duo img {
+    border-radius: 28px;
+    box-shadow: 0 24px 44px rgba(62, 39, 40, 0.08);
+    position: static !important;
+    width: 100% !important;
+}
+
+.about-images-duo img:first-child {
+    aspect-ratio: 0.78;
+    margin-top: 68px;
+    object-fit: cover;
+}
+
+.about-images-duo img:last-child {
+    aspect-ratio: 0.94;
+    object-fit: cover;
+}
+
 .location-section {
     margin-bottom: 120px;
 }
@@ -373,6 +400,46 @@ h1, h2, h3, h4, h5, h6,
     width: 100%;
 }
 
+.beauty-section-contact {
+    background:
+        linear-gradient(115deg, rgba(255, 250, 246, 0.88), rgba(240, 224, 214, 0.7)),
+        url("../images/blossomland/portrait-1.jpg") center center / cover no-repeat;
+}
+
+.beauty-section-contact .container {
+    background: rgba(255, 250, 246, 0.6);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(159, 100, 104, 0.12);
+    border-radius: 36px;
+    box-shadow: 0 24px 44px rgba(62, 39, 40, 0.08);
+    padding: 56px 62px;
+    position: relative;
+}
+
+.beauty-section-contact .beauty-content p {
+    max-width: 420px;
+}
+
+.beauty-section-contact .beauty-image {
+    background: rgba(255, 255, 255, 0.74);
+    border: 1px solid rgba(159, 100, 104, 0.12);
+    border-radius: 32px;
+    box-shadow: 0 24px 44px rgba(62, 39, 40, 0.08);
+    padding: 18px;
+}
+
+.beauty-section-contact .beauty-image:after {
+    display: none;
+}
+
+.beauty-section-contact .beauty-image img {
+    border-radius: 24px;
+    clip-path: none;
+    display: block;
+    height: 460px;
+    object-fit: cover;
+}
+
 .section-title h2,
 .page-title,
 .beauty-content h3,
@@ -476,6 +543,23 @@ h1, h2, h3, h4, h5, h6,
         margin-left: 0;
         margin-top: 18px;
     }
+
+    .about-images-duo {
+        gap: 16px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .about-images-duo img:first-child {
+        margin-top: 34px;
+    }
+
+    .beauty-section-contact .container {
+        padding: 36px 26px;
+    }
+
+    .beauty-section-contact .beauty-image img {
+        height: 360px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -511,5 +595,21 @@ h1, h2, h3, h4, h5, h6,
 
     .booking-widget-footer {
         display: grid;
+    }
+
+    .about-images-duo {
+        grid-template-columns: 1fr;
+    }
+
+    .about-images-duo img:first-child {
+        margin-top: 0;
+    }
+
+    .beauty-section-contact .container {
+        padding: 28px 20px;
+    }
+
+    .beauty-section-contact .beauty-image img {
+        height: 300px;
     }
 }
