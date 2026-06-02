@@ -121,7 +121,16 @@ h1, h2, h3, h4, h5, h6,
         url("../images/blossomland/treatment-4.jpg") no-repeat right -1% bottom / 35%;
     content: "";
     inset: 0;
-    mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 42%, rgba(0, 0, 0, 0.2) 76%, transparent 100%);
+    filter: saturate(0.98);
+    mask-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 1) 28%,
+        rgba(0, 0, 0, 0.96) 42%,
+        rgba(0, 0, 0, 0.72) 58%,
+        rgba(0, 0, 0, 0.36) 74%,
+        rgba(0, 0, 0, 0.12) 88%,
+        transparent 100%
+    );
     opacity: 0.96;
     pointer-events: none;
     position: absolute;
@@ -498,11 +507,18 @@ h1, h2, h3, h4, h5, h6,
     border: 1px solid rgba(159, 100, 104, 0.1);
     border-radius: 32px;
     box-shadow: 0 28px 48px rgba(62, 39, 40, 0.12);
+    overflow: hidden;
     padding: 14px;
+    position: relative;
 }
 
 .beauty-section-contact .beauty-image:after {
-    display: none;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), transparent 32%, transparent 68%, rgba(255, 255, 255, 0.12));
+    border-radius: 24px;
+    content: "";
+    inset: 14px;
+    pointer-events: none;
+    position: absolute;
 }
 
 .beauty-section-contact .beauty-image img {
